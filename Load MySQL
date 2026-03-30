@@ -1,0 +1,6 @@
+from sqlalchemy import create_engine
+
+engine = create_engine('mysql+pymysql://root:password@localhost/db_wedding')
+df.to_sql('reservasi_gedung', con=engine, if_exists='replace', index=False)
+git add script/main.py
+git commit -m "feat(database): load data into mysql database"
