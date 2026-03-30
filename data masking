@@ -1,0 +1,4 @@
+def mask_phone(phone):
+    return phone[:4] + "****" + phone[-2:]
+
+df['Kontak pengantin'] = df['Kontak pengantin'].apply(mask_phone)
