@@ -1,0 +1,3 @@
+df.to_excel("output/data_reservasi_clean.xlsx", index=False)
+git add script/main.py output/data_reservasi_clean.xlsx
+git commit -m "feat(output): export cleaned data to excel"
